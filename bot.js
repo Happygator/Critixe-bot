@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   if (message.content === '!help') {
-    message.reply('Happygator4723 is currently working on this bot. It has no usable features yet. #blamecritixe')
+    message.reply("use !critixe to get critixe's attention.\n !roll rolls two 6-sided dice, and !rollDnD rolls a 20-sided die.")
   }
   if (message.content === '!critixe') {
     message.reply('<@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998>')
