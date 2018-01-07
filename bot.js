@@ -13,7 +13,7 @@ client.on('message', message => {
     message.reply('<@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998>')
   }
   if (message.content === '!roll') {
-    message.reply('You roll' + 'testing')
+    message.reply('You roll ' + str(Math.floor(Math.random() * 6) + 1) )
   }
 });
 
