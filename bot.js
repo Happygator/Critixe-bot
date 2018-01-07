@@ -12,6 +12,9 @@ client.on('message', message => {
   if (message.content === '!critixe') {
     message.reply('<@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998>')
   }
+  if (message.content === '!roll') {
+    message.reply('You roll' + 'testing')
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
