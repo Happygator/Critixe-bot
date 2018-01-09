@@ -39,6 +39,9 @@ client.on('message', message => {
   if (message.content === '!rollYes') {
     message.reply("You roll " + String(Math.floor(Math.random() * 1000) + 1))
   }
+  if (message.content === '!rollOof') {
+    message.reply("You roll " + String(Math.floor(Math.random() * 9001) + 1000))
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
