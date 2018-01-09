@@ -33,7 +33,7 @@ client.on('message', message => {
     message.reply('You roll ' + String(roll3))
     message.reply('You roll ' + String(roll4))
     message.reply('You roll ' + String(roll5))
-    message.reply('You roll ' + String(roll1 + roll2 + roll3 + roll4 + roll5))
+    message.reply('Your total is ' + String(roll1 + roll2 + roll3 + roll4 + roll5))
     
   }
 });
