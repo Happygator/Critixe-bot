@@ -29,12 +29,12 @@ client.on('message', message => {
     roll4 = Math.floor(Math.random() * 20) + 1
     roll5 = Math.floor(Math.random() * 20) + 1
     total = 'Your total is ' + String(roll1 + roll2 + roll3 + roll4 + roll5)
+    message.reply( total)
     message.reply('You roll ' + String(roll1))
     message.reply('You roll ' + String(roll2))
     message.reply('You roll ' + String(roll3))
     message.reply('You roll ' + String(roll4))
     message.reply('You roll ' + String(roll5))
-    message.reply( total)
     
   }
   if (message.content === '!rollYes') {
