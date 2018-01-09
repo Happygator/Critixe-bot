@@ -26,14 +26,15 @@ client.on('message', message => {
     roll1 = Math.floor(Math.random() * 20) + 1
     roll2 = Math.floor(Math.random() * 20) + 1
     roll3 = Math.floor(Math.random() * 20) + 1
-    roll4 = Math.floor(Math.random() * 20) + 1
+//    roll4 = Math.floor(Math.random() * 20) + 1
 //    roll5 = Math.floor(Math.random() * 20) + 1
-    total = 'Your total is ' + String(roll1 + roll2 + roll3 + roll4)
+//  If I roll 5 dice, the total somehow comes 5 to 10 seconds after the dice values.
+    total = 'Your total is ' + String(roll1 + roll2 + roll3)
 
     message.reply('You roll ' + String(roll1))
     message.reply('You roll ' + String(roll2))
     message.reply('You roll ' + String(roll3))
-    message.reply('You roll ' + String(roll4))
+//    message.reply('You roll ' + String(roll4))
 //    message.reply('You roll ' + String(roll5))
         message.reply( total)
     
