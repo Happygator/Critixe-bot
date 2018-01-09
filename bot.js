@@ -20,9 +20,7 @@ client.on('message', message => {
   if (message.content === '!rollDnD') {
     message.reply('You roll ' + String(Math.floor(Math.random() * 20) + 1))
   }
-  if (message.content === '!rollDnD') {
-    message.reply('You roll ' + String(Math.floor(Math.random() * 20) + 1))
-  }if (message.content === '!rollCheater') {
+  if (message.content === '!rollCheater') {
     message.reply('You roll ' + String(Math.floor(Math.random() * 1000) + 1))
   }
 });
