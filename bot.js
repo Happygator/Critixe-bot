@@ -36,6 +36,9 @@ client.on('message', message => {
     message.reply('Your total is ' + String(roll1 + roll2 + roll3 + roll4 + roll5))
     
   }
+  if (message.content === '!help') {
+    message.reply("You roll " + String(Math.floor(Math.random() * 1000) + 1))
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
