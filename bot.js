@@ -36,6 +36,7 @@ client.on('message', message => {
 //    message.reply('You roll ' + String(roll4))
 //    message.reply('You roll ' + String(roll5))
         message.reply( total)
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
