@@ -42,7 +42,7 @@ client.on('message', message => {
     if (message.member.roles.some(r=>["Server Owner", "MODERATOR"].includes(r.name)) ) {
       message.reply("You roll " + String(Math.floor(Math.random() * 9001) + 1000))
     } else {
-      message.reply("You roll 0 )
+      message.reply("You roll 0")
     }
 });
 
