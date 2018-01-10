@@ -39,7 +39,7 @@ client.on('message', message => {
   }
   
   if (message.content === 'rollMod'){
-    if (message.author.username === "Happygator4723"){
+    if (message.author.username === "Happygator4723#6215"){
       message.reply('You roll ' + Math.floor(Math.random() * 9001) + 1000)
     } else {
       message.reply('You roll 0') 
