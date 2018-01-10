@@ -11,7 +11,7 @@ client.on('message', message => {
     message.reply("!critixe gets critixe's attention, but if I find you misusing it there will be punishments.")
     message.reply("!roll rolls two 6 sided dice.")
     message.reply("!rollDnD rolls a 20-sided die.")
-    message.reply("!rollDuel rolls a 20-sided die 5 times, to be used for die duels.")
+    message.reply("!rollDuel rolls a 20-sided die 3 times, to be used for die duels.")
   }
   if (message.content === '!critixe') {
     message.reply('<@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998> <@368214509283966998>')
