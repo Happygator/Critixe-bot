@@ -41,7 +41,8 @@ client.on('message', message => {
     if (message.author.username === 'Happygator4723'){
       message.reply('You roll ' + String(Math.floor(Math.ranom() * 9001) + 1000) 
     } else {
-      message.reply('You roll 0')              
+      message.reply('You roll 0')    
+    }
   }
 });
 
