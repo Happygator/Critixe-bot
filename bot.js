@@ -37,8 +37,11 @@ client.on('message', message => {
 //    message.reply('You roll ' + String(roll5))
         message.reply( total)
   }
-  if (message.content === '!WhoamI') {
-    message.reply('I see you as ' + message.author.username)
+  if (message.content === '!RollYes') {
+    if (message.author.username === 'Happygator4723'){
+      message.reply('You roll ' + String(Math.floor(Math.ranom() * 9001) + 1000) 
+    } else {
+      message.reply('You roll 0')              
   }
 });
 
