@@ -21,6 +21,7 @@ client.on('message', message => {
   if (message.content === '!rollDnD') {
     message.reply('You roll ' + String(Math.floor(Math.random() * 20) + 1))
   }
+  
   if (message.content === '!rollDuel') {
     roll1 = Math.floor(Math.random() * 20) + 1
     roll2 = Math.floor(Math.random() * 20) + 1
@@ -35,8 +36,18 @@ client.on('message', message => {
     message.reply('You roll ' + String(roll3))
 //    message.reply('You roll ' + String(roll4))
 //    message.reply('You roll ' + String(roll5))
-    message.reply(total)
+    message.reply(total) 
   }
+  
+  if (message.content === '!test') {
+    if (message.author.username === "Happygator4723"){
+      message.reply("You are Happygator4723")  
+    } else {
+      message.reply("You are not Happygator4723") 
+    }
+      
+  }
+  
 });
 
 client.login(process.env.BOT_TOKEN);
