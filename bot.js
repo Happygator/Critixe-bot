@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var roll1,roll2,roll3,roll4,roll5
+var roll1,roll2,roll3h
 client.on('ready', () => {
   console.log('I am ready!');
 });
@@ -35,8 +35,8 @@ client.on('message', message => {
     message.reply('You roll ' + String(roll3))
 //    message.reply('You roll ' + String(roll4))
 //    message.reply('You roll ' + String(roll5))
-    message.reply( total)
-  
+        message.reply( total)
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
