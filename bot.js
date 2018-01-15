@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var roll1,roll2,roll3
-var Yesallowed = ["Happygator4723"]
 client.on('ready', () => {
   console.log('I am ready!');
 });
@@ -42,7 +41,7 @@ client.on('message', message => {
   }
   
   if (message.content === '!rollYes') {
-    if (message.author.username === "Happygator4723"){
+    if (message.author.username === "Happygator4723") {
       message.reply('You roll ' + String(Math.floor(Math.random() * 9001) + 1000) )  
     } else {
       message.reply("You roll 0, for you do not have the power required to harness the power of Yes!") 
