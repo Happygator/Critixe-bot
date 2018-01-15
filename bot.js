@@ -42,7 +42,7 @@ client.on('message', message => {
   }
   
   if (message.content === '!rollYes') {
-    if (Yesallowed.IndexOf(message.author.username) != -1){
+    if (Yesallowed.indexOf(message.author.username) != -1){
       message.reply('You roll ' + String(Math.floor(Math.random() * 9001) + 1000) )  
     } else {
       message.reply("You roll 0, for you do not have the power required to harness the power of Yes!") 
