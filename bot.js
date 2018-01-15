@@ -4,6 +4,7 @@ var roll1,roll2,roll3h
 client.on('ready', () => {
   console.log('I am ready!');
 });
+var Yesallowed = ["Happygator4723"]
 
 client.on('message', message => {
   if (message.content === '!help') {
@@ -40,10 +41,10 @@ client.on('message', message => {
   }
   
   if (message.content === '!rollYes') {
-    if (message.author.username === "Happygator4723"){
+    if (Yesallowed.IndexOf(message.author.username) != -1){
       message.reply('You roll ' + String(Math.floor(Math.random() * 9001) + 1000) )  
     } else {
-      message.reply("You roll 0, for you do you not have the power that Happygator4723 possesses!") 
+      message.reply("You roll 0, for you do not have the power required to harness the power of Yes!") 
     }
       
   }
