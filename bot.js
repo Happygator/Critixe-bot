@@ -1,10 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var roll1,roll2,roll3h
+var roll1,roll2,roll3
+var Yesallowed = ["Happygator4723"]
 client.on('ready', () => {
   console.log('I am ready!');
 });
-var Yesallowed = ["Happygator4723"]
+
 
 client.on('message', message => {
   if (message.content === '!help') {
